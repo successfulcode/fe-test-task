@@ -53,11 +53,11 @@ export default {
   width: 45%;
   height: 440px;
   padding: 20px;
-  // background-color: $product-background-color;
   margin: 1px;
   background: url('../assets/images/3.png');
   background-repeat: repeat-y;
   background-color: $product-background-color;
+  cursor: pointer;
 }
 .product3-information {
   width: 182px;
@@ -72,6 +72,20 @@ export default {
     color: $active-category-color;
     font-size: 16px;
     margin-bottom: 1px;
+  }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .product3 {
+    width: 45%;
+    height: 440px;
+    padding: 20px;
+    margin: 1px;
+    background: url('../assets/images/3.png');
+    background-repeat: repeat-y;
+    background-color: $product-background-color;
+    cursor: pointer;
   }
 }
 </style>

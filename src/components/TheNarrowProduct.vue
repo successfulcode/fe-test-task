@@ -12,7 +12,7 @@
     </span>
 
     <div class="product-photo-container1">
-      <!-- <img :src="`..${image}`" alt="product" /> -->
+      <img src="../assets/images/1.png" alt="product" />
     </div>
     <div class="product-information">
       <div class="brand">
@@ -65,7 +65,8 @@ export default {
   padding: 37px 0 37px 0;
   margin: auto;
   text-align: center;
-  background: url('../assets/images/1.png');
+  // background: url('../assets/images/1.png');
+  cursor: pointer;
   background-repeat: repeat-y;
 }
 
@@ -79,6 +80,27 @@ export default {
     color: $active-category-color;
     font-size: 14px;
     margin-bottom: 1px;
+  }
+}
+@media (max-width: 1024px) {
+  .product-photo-container1 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    img {
+      width: 70%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .product-photo-container1 {
+    width: 100%;
+    height: auto;
+    padding: 37px 0 37px 0;
+    margin: auto;
+    img {
+      width: 70%;
+    }
   }
 }
 </style>

@@ -78,7 +78,6 @@ export default {
             }
             return { ...item, wider: false };
           });
-          console.log('this.products', this.products);
         }
       } catch (error) {
         console.log(error);
@@ -121,6 +120,17 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: unset;
+}
+@media (max-width: 1024px) {
+  .products-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .products-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .products-container :nth-child(6) {
